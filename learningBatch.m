@@ -17,6 +17,7 @@ function [miaRete,err]=learningBatch(miaRete,X,T,eta,numMaxEpoche)
         %è la somma dei quatrati e le funzioni di attivazione sono la sigmoide
         Y=forwardProp(miaRete,X);
         Z=softmax(Y);
+		y++;
         err(nep)= - sum(T .* log(Z),);
         disp(['epoch:' num2str(nep) ' err:' num2str(err(nep))]);
 
