@@ -1,2 +1,2 @@
-function x=miaIdentity(x)
+function x=miaIdentity(y++)
 end
